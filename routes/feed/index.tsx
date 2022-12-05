@@ -16,19 +16,11 @@ export const handler: Handlers = {
 };
 
 export default function Feed({ data }: PageProps<IsLogged>) {
-  if (!data.isAllowed) {
-    return route("/signin", true);
-  }
   return (
     <div>
       <Header />
       <div class="bg-[#F2F2F2]">
         <h4>asasf</h4>
-        <div>
-          You currently logged {data.isAllowed ? "are" : route("/signin", true)}
-          {" "}
-          in.
-        </div>
         <h4>asasf</h4>
         <div>You currently logged in.</div>
         <h4>asasf</h4>

@@ -1,6 +1,6 @@
 const Search = () => {
   return (
-    <div class="flex flex-row items-center flex-wrap w-[600px]">
+    <div class="flex flex-row items-center flex-wrap rounded-md w-[600px]">
       <input
         class="w-full py-2 pl-12 flex items-center focus:outline-none border-b-2"
         type="text"
