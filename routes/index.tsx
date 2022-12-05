@@ -6,8 +6,11 @@ export default function Home() {
       <Head>
         <title>Fresh App</title>
       </Head>
-      <div class="bg-[#047857]">
-        <div class="lg:absolute top-60 mx-14 py-4">
+      <div
+        class="bg-contain"
+        style="background-image: url(/img/bg_fruits.jpg)"
+      >
+        <div class="lg:absolute top-[20rem] left-28 mx-14 py-4">
           <div class="grid content-start md:content-around">
             <div class="flex flex-col">
               <span class="text-[40px]">
