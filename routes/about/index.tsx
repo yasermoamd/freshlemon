@@ -5,9 +5,19 @@ const About = () => {
   return (
     <div>
       <div class="bg-[#30BE76] lg:p-4 flex justify-around">
-        <Link href="/">
-          <h1 class="text-[16px] text-white">Freshlemon</h1>
-        </Link>
+      <div class="flex items-center gap-2 justify-center">
+        <img
+          class="mt-2"
+          src="https://i.ibb.co/FYWV183/loco-icon.png"
+          alt="freshLemon"
+        />
+
+        <h1 class="text-[16px] font-bold font-serif text-white">
+          <Link href="/">
+            Freshlemon
+          </Link>
+        </h1>
+        </div>
         <nav class="flex gap-8 text-[16px] text-white">
           <Link href="/">AFQ</Link>
           <Link href="/">Career</Link>

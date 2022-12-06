@@ -2,6 +2,7 @@ import { h } from "preact";
 import { useState } from "preact/hooks";
 import { Link } from "preact-router";
 import Nav from "../../components/Nav.tsx";
+import Footer from "../../components/Footer/index.tsx";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -12,10 +13,11 @@ const Signup = () => {
     e.preventDefault();
   };
   return (
-    <div class="flex flex-col justify-center">
+    <div>
       <Nav />
+      <div  class="flex flex-col justify-center items-center">
       {/* page title */}
-      <div class="relative max-h-screen w-full top-[12rem]">
+      <div class="max-h-screen w-full mt-[12rem] mb-[2rem]">
         <div class="flex justify-center gap-28">
           <div class="flex flex-row gap-[4rem]">
             {/*  */}
@@ -106,6 +108,10 @@ const Signup = () => {
             </form>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center relative top-[10rem]">
+      <Footer />
       </div>
     </div>
   );

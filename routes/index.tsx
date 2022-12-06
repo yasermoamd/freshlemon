@@ -24,15 +24,14 @@ export default function Home() {
                 cooking style, and more
               </span>
             </div>
-            <div class="flex justify-between w-[500px] my-8 ">
-              <div class="bg-white text-[#30BE76] text-[14px]  w-[180px] text-[18px] text-center rounded-xl shadow-md">
-                <Link href="/signup" class="pr-[17px] border-none">
-                  Join Scratch
+            <div class="flex justify-between my-8 items-center ">
+            <div class="border-[#30BE76] border-2 p-2 bg-[#30BE76] text-white w-[239px] h-[50px] text-[18px] text-center rounded-xl shadow-md">
+                <Link href="/signup" class="pl-[17px] border-none">
+                Join Freshlemon
                 </Link>
               </div>
-              <div class="">
-              </div>
-              <div class="bg-[#30BE76] p-2 text-[#ffff] w-[180px] text-[18px] text-center rounded-xl shadow-md">
+               
+              <div class="border-[#30BE76] border-2 p-2 text-[#30BE76] w-[239px] h-[50px] text-[18px] text-center rounded-xl shadow-md">
                 <Link href="/about" class="pl-[17px] border-none">
                   Learn More
                 </Link>

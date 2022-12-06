@@ -18,6 +18,7 @@ const Nav = () => {
       </div>
       <nav class="flex gap-8 text-[16px] text-white">
         <Link href="/signin">Signin</Link>
+        <Link href="/feed">Feed</Link>
       </nav>
     </div>
   );
