@@ -14,34 +14,35 @@ type CreateRecipeProps = {
 
 const RecipeCard = (props: CreateRecipeProps) => {
 	return (
-		<div class="bg-white w-[731px] rounded-bl-2xl rounded-br-2xl rounded-2xl mt-6">
-			<div class="flex flex-row bg-white m-4 gap-6">
-				<div class="flex">
-					<img
-						src={props.profile_img}
-						alt={`${props.first_name} + ${props.last_name}`}
-					/>
-				</div>
-				<div class="flex flex-col">
-					<h3 class="font-semibold font-serif text-[#030F09] text-[14px]">
-						{props.first_name} {props.last_name}
-					</h3>
-					<span class="text-[#606060] text-[12px]">
-						{props.createdAtByHour}h ago
-					</span>
-				</div>
-			</div>
+		<div class="bg-white w-[731px] sm:w-[398px] rounded-bl-2xl rounded-br-2xl rounded-2xl mt-6">
 			<div
 				class="flex justify-between flex-col gap-10"
 				style={{
 					backgroundImage: "url(/img/recipe_card_img.png)",
-					backgroundSize: "cover",
+					backgroundSize: "container",
 					backgroundRepeat: "no-repeat",
-					backgroundPosition: "center center",
-					width: "731px",
+					backgroundPosition: "center",
+					width: "100%",
+					maxWidth: "41s1px",
 					height: "238px",
 				}}
 			>
+				<div class="flex flex-row bg-white gap-6">
+					<div class="flex">
+						<img
+							src={props.profile_img}
+							alt={`${props.first_name} + ${props.last_name}`}
+						/>
+					</div>
+					<div class="flex flex-col sm:mt-2">
+						<h3 class="font-semibold font-serif text-[#030F09] text-[14px]">
+							{props.first_name} {props.last_name}
+						</h3>
+						<span class="text-[#606060] text-[12px]">
+							{props.createdAtByHour}h ago
+						</span>
+					</div>
+				</div>
 			</div>
 			<div class="flex flex-col bg-white">
 				<div class="flex justify-between items-center mx-8 my-4">
@@ -59,7 +60,7 @@ const RecipeCard = (props: CreateRecipeProps) => {
 				<div class="mx-8 font-normal text-[14px] leading-[22px] font-serif text-[#A8A8A8]">
 					{props.recipe_description}
 				</div>
-				<div class="flex justify-between mx-8 mb-4 mt-2">
+				<div class="flex justify-between items-center mx-8 mb-4 mt-2">
 					<div class="flex flex-row gap-4">
 						<div class="text-[#606060] text-[14px] leading-[22px]">
 							{props.like} Like
@@ -69,7 +70,8 @@ const RecipeCard = (props: CreateRecipeProps) => {
 						</div>
 					</div>
 					<div class="">
-						<div class="flex justify-center gap-2 font-bold items-center border-[#30BE76] border-2 p-2 text-[#30BE76] w-[139px] h-[50px] text-[18px] text-center rounded-xl shadow-md">
+						<div class="flex justify-center gap-2 font-bold items-center border-[#30BE76] 
+						border-2 p-2 text-[#30BE76] w-[139px] h-[50px] sm:w-[87px] sm:h-[36px] text-[18px] text-center rounded-xl shadow-md">
 							<img
 								src="/icon/add_icon.svg"
 								class="w-[24px]"

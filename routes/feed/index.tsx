@@ -37,7 +37,7 @@ export default function Feed(
 					<div>
 						<ProfileCard followers={122} likes={123} />
 					</div>
-					<div class="flex flex-col">
+					<div class="flex flex-col items-center">
 						<CreateRecipeBanner followers={128} />
 						<RecipeCard
 							like={13}

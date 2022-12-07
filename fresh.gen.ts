@@ -7,8 +7,10 @@ import * as $0 from "./routes/about/index.tsx";
 import * as $1 from "./routes/api/joke.ts";
 import * as $2 from "./routes/feed/index.tsx";
 import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/signin/index.tsx";
-import * as $5 from "./routes/signup/index.tsx";
+import * as $4 from "./routes/profile/[username].tsx";
+import * as $5 from "./routes/profile/index.tsx";
+import * as $6 from "./routes/signin/index.tsx";
+import * as $7 from "./routes/signup/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/MostActiveUser.tsx";
 import * as $$2 from "./islands/Search.tsx";
@@ -19,8 +21,10 @@ const manifest = {
 		"./routes/api/joke.ts": $1,
 		"./routes/feed/index.tsx": $2,
 		"./routes/index.tsx": $3,
-		"./routes/signin/index.tsx": $4,
-		"./routes/signup/index.tsx": $5,
+		"./routes/profile/[username].tsx": $4,
+		"./routes/profile/index.tsx": $5,
+		"./routes/signin/index.tsx": $6,
+		"./routes/signup/index.tsx": $7,
 	},
 	islands: {
 		"./islands/Counter.tsx": $$0,
