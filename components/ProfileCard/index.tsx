@@ -8,8 +8,8 @@ type ProfileCardProps = {
 const ProfileCard = (props: ProfileCardProps) => {
 	return (
 		<div>
-			<div class="bg-white shadow-md w-[334px] max-h-[220px] rounded-md">
-				<div class="lg:flex md:flex hidden sm:flex flex-row gap-6">
+			<div class="bg-white shadow-md w-[334px] sm:w-[305px] max-h-[220px] rounded-md">
+				<div class="lg:flex md:flex hidden sm:flex flex-row gap-6 sm:gap-1">
 					<div class="m-[1rem] mt-5">
 						<img
 							src="/img/profile_img.png"
