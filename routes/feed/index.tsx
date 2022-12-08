@@ -4,7 +4,6 @@ import { getCookies } from "https://deno.land/x/std/http/cookie.ts";
 import Header from "../../components/Header/index.tsx";
 import ProfileCard from "../../components/ProfileCard/index.tsx";
 import CreateRecipeBanner from "../../components/CreateRecipeBanner/index.tsx";
-
 import LiveCooking from "../../components/LiveCooking/index.tsx";
 import RecipeCard from "../../components/RecipeCard/index.tsx";
 import { IUserProfile } from "../../interfaces/index.ts";

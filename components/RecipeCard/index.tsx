@@ -14,7 +14,10 @@ type CreateRecipeProps = {
 
 const RecipeCard = (props: CreateRecipeProps) => {
 	return (
-		<div class="bg-white w-[731px] sm:w-[398px] rounded-bl-2xl rounded-br-2xl rounded-2xl mt-6">
+		<div
+			class="bg-white w-[731px] sm:w-[398px] rounded-bl-2xl rounded-br-2xl rounded-2xl mt-6"
+			id="portal"
+		>
 			<div
 				class="flex justify-between flex-col gap-10"
 				style={{
@@ -23,18 +26,19 @@ const RecipeCard = (props: CreateRecipeProps) => {
 					backgroundRepeat: "no-repeat",
 					backgroundPosition: "center",
 					width: "100%",
-					maxWidth: "41s1px",
+					maxWidth: "411px",
 					height: "238px",
 				}}
 			>
-				<div class="flex flex-row bg-white gap-6">
+				<div class="flex flex-row bg-white gap-4">
 					<div class="flex">
 						<img
+							class="w-[50px] h-[50px] mt-2 ml-2 mb-2"
 							src={props.profile_img}
 							alt={`${props.first_name} + ${props.last_name}`}
 						/>
 					</div>
-					<div class="flex flex-col sm:mt-2">
+					<div class="flex flex-col sm:mt-3">
 						<h3 class="font-semibold font-serif text-[#030F09] text-[14px]">
 							{props.first_name} {props.last_name}
 						</h3>
@@ -88,4 +92,5 @@ const RecipeCard = (props: CreateRecipeProps) => {
 	);
 };
 
+const Portal = () => {};
 export default RecipeCard;
