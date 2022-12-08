@@ -2,6 +2,12 @@
 
 ### Usage
 
+Downlaod Deno:
+
+```
+irm https://deno.land/install.ps1 | iex
+```
+
 Start the project:
 
 ```
