@@ -3,6 +3,9 @@ import { h } from "preact";
 type ProfileCardProps = {
 	followers: number;
 	likes: number;
+	recipes?: number;
+	saved?: number | null;
+	following?: number | null;
 };
 
 const ProfileCard = (props: ProfileCardProps) => {
@@ -41,13 +44,13 @@ const ProfileCard = (props: ProfileCardProps) => {
 				<div class="flex flex-col mx-[2rem] pb-2">
 					<div class="flex justify-between mx-[1rem]">
 						<div class="text-[#030F09] text-[20px] font-bold font-serif">
-							20
+							{props.recipes}
 						</div>
 						<div class="text-[#030F09] text-[20px] font-bold font-serif">
-							75
+							{props.saved}
 						</div>
 						<div class="text-[#030F09] text-[20px] font-bold font-serif">
-							248
+							{props.following}
 						</div>
 					</div>
 					<div class="flex justify-between">

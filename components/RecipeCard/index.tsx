@@ -15,7 +15,7 @@ type CreateRecipeProps = {
 const RecipeCard = (props: CreateRecipeProps) => {
 	return (
 		<div
-			class="bg-white w-[731px] sm:w-[398px] rounded-bl-2xl rounded-br-2xl rounded-2xl mt-6"
+			class="bg-white w-[581px] h-[398px] rounded-md  mt-6"
 			id="portal"
 		>
 			<div
@@ -26,7 +26,7 @@ const RecipeCard = (props: CreateRecipeProps) => {
 					backgroundRepeat: "no-repeat",
 					backgroundPosition: "center",
 					width: "100%",
-					maxWidth: "411px",
+					maxWidth: "581px",
 					height: "238px",
 				}}
 			>
@@ -64,7 +64,7 @@ const RecipeCard = (props: CreateRecipeProps) => {
 				<div class="mx-8 font-normal text-[14px] leading-[22px] font-serif text-[#A8A8A8]">
 					{props.recipe_description}
 				</div>
-				<div class="flex justify-between items-center mx-8 mb-4 mt-2">
+				<div class="flex justify-between items-center mx-8 mb-4 mt-4">
 					<div class="flex flex-row gap-4">
 						<div class="text-[#606060] text-[14px] leading-[22px]">
 							{props.like} Like
@@ -74,16 +74,22 @@ const RecipeCard = (props: CreateRecipeProps) => {
 						</div>
 					</div>
 					<div class="">
-						<div class="flex justify-center gap-2 font-bold items-center border-[#30BE76] 
-						border-2 p-2 text-[#30BE76] w-[139px] h-[50px] sm:w-[87px] sm:h-[36px] text-[18px] text-center rounded-xl shadow-md">
-							<img
-								src="/icon/add_icon.svg"
-								class="w-[24px]"
-								alt="save"
-							/>
-							<Link href="/recipe" class="pl-[17px] border-none">
-								save
-							</Link>
+						<div class="flex justify-around items-center bg-transparent font-semibold text-[#30BE76] w-[73px] h-[26] px-2 border border-[#30BE76]  rounded-md">
+							<div>
+								<img
+									src="/icon/add_icon.svg"
+									class="w-[14px] h-[14px] hover:text-white"
+									alt="save"
+								/>
+							</div>
+							<div>
+								<Link
+									href="/recipe"
+									class="pl-[17px] border-none"
+								>
+									save
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>

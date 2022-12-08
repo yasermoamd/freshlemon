@@ -9,6 +9,7 @@
 		"@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
 		"expect": "https://deno.land/x/expect@v0.2.10/expect_test.ts",
 		"@testing-library/preact": "https://esm.sh/@testing-library/preact@3.2.2",
+		"@heroicons/react": "https://esm.sh/@heroicons/react@2.0.13",
 		"twind": "https://esm.sh/twind@0.16.17",
 		"twind/": "https://esm.sh/twind@0.16.17/"
 	}
