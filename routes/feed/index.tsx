@@ -33,7 +33,7 @@ export default function Feed(
 			<Header />
 			<div class="bg-[#F2F2F2]">
 				<div class="container mx-auto">
-					<div class="flex flex-row justify-between">
+					<div class="flex flex-row justify-around">
 						<div class="mt-6">
 							<ProfileCard followers={122} likes={123} />
 						</div>
