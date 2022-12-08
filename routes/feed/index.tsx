@@ -1,6 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import type { Handlers, PageProps } from "$fresh/server.ts";
-import { getCookies } from "https://deno.land/x/std/http/cookie.ts";
+import { getCookies } from "https://deno.land/std@0.167.0/http/cookie.ts";
 import Header from "../../components/Header/index.tsx";
 import ProfileCard from "../../components/ProfileCard/index.tsx";
 import CreateRecipeBanner from "../../components/CreateRecipeBanner/index.tsx";
