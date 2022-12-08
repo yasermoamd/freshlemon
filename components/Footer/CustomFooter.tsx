@@ -8,7 +8,7 @@ type CustomFooterPorps = {
 
 const CustomFooter = () => {
 	return (
-		<div class="bg-white bg-white w-[325px] max-h-[123px] rounded-xl ">
+		<div class="bg-white bg-white w-[305px] max-h-[123px] rounded-xl ">
 			<div class="flex flex-col gap-4">
 				<div class="flex justify-between gap-2 mx-4 mt-2 text-[#767676] tracking-[0.4px] text-[12px]">
 					<Link href="/about_freshlemon">About Freshlemon</Link>

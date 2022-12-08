@@ -6,7 +6,7 @@ type LiveCookingProps = {
 
 const LiveCooking = (props: LiveCookingProps) => {
 	return (
-		<div class="bg-white w-[325px] p-4 max-h-[249px] rounded-xl">
+		<div class="bg-white w-[305px] p-4 h-[249px] rounded-xl">
 			<div class="flex flex-col items-start">
 				<div class="mb-2">
 					<h1 class="text-[#030F09] font-bold text-[16px] font-serif">
